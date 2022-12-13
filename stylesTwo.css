@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/*
+Author:   Sean Spring
+Date:     12/13/2022
+Purpose:  To create an online profile/resume
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding:25px 0px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("logo.png");
+    background-color:white;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:silver;
+}
+  
+#navbar li {
+    float: left;
+}
+  
+#navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#navbar li a:hover {
+    background-color: goldenrod;
+    color:white;
+}
+  
+.active {
+    background-color:goldenrod;
+}
+  
+h3 {
+    text-align: center;
+}
+  
+p {
+    text-align:center;
+    align-self:center;
+    background-color:rgba(255, 255, 255, 0.596);
+    color:black;
+    width:33%;
+    margin-left: 33%;
+}
+  
+.content {
+    padding: 25px 25px;
+    flex-grow: 1;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: auto;
+    align-self: center;
+    margin: 0 50px;
+}
+  
+.container a {
+    color: black;
+    margin-top:50px;
+}
+
+img {
+    margin-top: 25px;
+    margin-left: 30px;
+    opacity: .6;
+}
+
+img:hover {
+    opacity:1;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 0%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    margin-top:100px;
+    padding: 20px;
+    color: white;
+    display: none;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    float: right;
+    margin-right:350px;
+    padding:5px;
+    color: black;
+    background-color:lightgrey;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+footer {
+    background-color:silver;
+    color:black;
+    text-align: center;
+}

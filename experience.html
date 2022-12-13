@@ -1,0 +1,93 @@
+<!DOCtype html>
+<html lang = en>
+
+<!--
+    Author:     Sean Spring
+    Date:       12/13/2022
+    Purpose:    Create an online profile/resume
+-->
+
+    <head>
+        <link rel="stylesheet" href="stylesTwo.css">
+    </head>
+    <body>
+        <nav>
+            <ul id = navbar>
+			    <li><a href="index.html">Home</a></li>
+                <li><a href="web.html">Web Development</a></li>
+                <li><a href="programming.html">C Sharp Coding</a></li>
+                <li><a class = "active" href="experience.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <script>function openTab(tabName)
+            {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++)
+                {
+                    x[i].style.display = "none";
+                }
+            document.getElementById(tabName).style.display = "block";
+            }
+        </script>
+
+        <div class = "content">
+            <h3>Work Experience</h3>
+            <br>
+            <p>As someone who entered the work force at the age of 16, I have experienced many different forms of technology, and had the priveledge of watching it unfiold to what it is today. From using point of sale machines, to making spreadsheets with embedded formulas, all the way to making my own programs; I've been able to use these experiences to become a better employee. Technology continues to excite me in new ways, and I look forward to using it to the full in whatever capacity works best for you and your company.</p>
+            <br>
+            <p>The three sections below incapsulate 15+ years of experience. Please click the images for more details.</p>
+            <br>
+                <div class = "row">
+                    <div class = "column" onclick = "openTab('b1');"><img src ="krogercompanies.jpg" width="350px"></div>
+                    <div class = "column" onclick = "openTab('b2');"><img src ="bps.png" width="350px"></div>
+                    <div class = "column" onclick = "openTab('b3');"><img src ="otc.jpg" width="350px"></div>
+                </div>
+                
+                <div id="b1" class="containerTab">
+                    <span onclick = "this.parentElement.style.display='none'" class = "closebtn"> x </span>
+                    <h4>City Market/Dillons</h4>
+                    <p>I had the priveledge of working for the Kroger family of stores for eight years. Most of that tenur was with their City Market branch in Montrose, CO from 2007 to 2015. I transferred to the Dillons store of Springfield, MO in 2015, and remained there until the stored closed down from a buyout. In my time with Kroger, I served in several positions around the store, up to and including managerial positions. I attended learning events, helped with accounting, and even aided in scheduling. Below are some of the positions I held and technologies we used at that time.</p>
+                    <br>
+                        <p><u>Overnight Shelf Stocker</u></p>
+                        <p><u>Grocery Clerk</u></p>
+                        <p><u>Service Desk Rep</u></p>
+                            <p><i>Western Union</i></p>
+                        <p><u>Front End Manager</u></p>
+                        <p><u>Accounting</u></p>
+                            <p><i>Excel</i></p>
+                        <p><u>Product Receiver</u></p>
+                            <p><i>Shelf Engine</i></p>
+                    </dl>
+                </div>
+                <div id="b2" class="containerTab">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn"> x </span>
+                    <h4>Bass Pro Shops HQ</h4>
+                    <p>In 2015, right after becoming a dislocated worker, I was hired by Bass Pro Shops at their corporate headquarters. I started working there as a Customer Care Center Rep, and our job was to contact those who had submitted interest in buying a boat or utility vehicle. It was mostly outbound calls with some inbound, and we used a web based call tracker to start with. When that was discontinued, we used Excel for tracking our calls, and I became the Team Lead for the department. After some time using Excel in a very basic manner, and getting the permission from my supervisor, I began creating a better functioning call tracker using Excel's built in VBA code that is still being used by the department as of 2022. Below is a brief list of my seven year tenur with Bass Pro Shops/Cabela's.</p>
+                    <br>
+                        <p><u>Customer Care Center Rep</u></p>
+                            <p><i>Miscrosoft Office Suite</i></p>
+                        <p><u>Customer Care Center Team Lead</u></p>
+                            <p><i>Created a call tracker using Excel</i></p>
+                            <p><i>Began attending stakeholder meetings for products</i></p>
+                </div>
+                <div id="b3" class="containerTab">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn"> x </span>
+                    <h4>Ozark Technical Community College</h4>
+                    <p>After leaving Bass Pro Shops in 2021, I began attending Ozark Technical Community College to gain a certification in Computer Information Science. Creating the call tracker for Bass Pro as I mentioned in that section, really sparked an interest in me to create more. I am due to graduate from the certification course in May, and will be available for employment at that point. Below are the courses and specialties I've learned in my year with OTC.</p>
+                    <br>
+                        <p><u>Web Development</u></p>
+                            <p><i>HTML</i></p>
+                            <p><i>CSS</i></p>
+                            <p><i>Javascript</i></p>
+                        <p><u>Computer Programming</u></p>
+                            <p><i>C# Sharp</i></p>
+                </div>
+        </div>
+
+        <footer>Developer&#40;&#41; Coder&#123;&#125; Programmer&#91;&#93; Engineer&lt;&gt; Architect&#124;&#124;</footer>
+
+    </body>
+</html>

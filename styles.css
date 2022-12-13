@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/*
+Author:   Sean Spring
+Date:     12/13/2022
+Purpose:  To create an online profile/resume
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding:25px 0px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("loadlogo.png");
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position:center;
+    animation: fadeOut 7s forwards;
+}
+
+/* Background Transition */
+@keyframes fadeOut {
+  from {background-image: url("loadlogo.png");
+        background-color:black;
+        background-position:center;}
+  to   {background-image: url("logo.png");
+        background-color: white;
+        background-position:center;}
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:silver;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: goldenrod;
+  color:white;
+}
+
+.active {
+  background-color:goldenrod;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align:center;
+  align-self:center;
+  color:black;
+  width:33%;
+  margin-left: 33%;
+}
+
+.content {
+  padding: 25px 25px;
+  flex-grow: 1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  height: auto;
+  align-self: center;
+  margin: 0 50px;
+}
+
+.container a {
+  color: black;
+  text-decoration: none;
+}
+
+.webcontainer {
+  margin: 15% 15%;
+  border: 3px solid black;
+  border-radius: 12px;
+  text-align:center;
+  color:#0000;
+   background:
+    linear-gradient(-90deg,black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+.programmingcontainer {
+  margin: 15% 15%;
+  border: 3px solid black;
+  border-radius: 12px;
+  text-align:center;
+  color:#0000;
+   background:
+    linear-gradient(-90deg,black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+.experiencecontainer {
+  margin: 15% 15%;
+  border: 3px solid black;
+  border-radius: 12px;
+  text-align:center;
+  color:#0000;
+   background:
+    linear-gradient(-90deg,black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+.contactcontainer {
+  margin: 15% 15%;
+  border: 3px solid black;
+  border-radius: 12px;
+  text-align:center;
+  color:#0000;
+   background:
+    linear-gradient(-90deg,black 5px,#0000 0) 10px 0,
+    linear-gradient(black 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+    b .7s infinite steps(1),   
+    t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  color:aqua;
+}
+
+footer {
+  background-color:silver;
+  color:black;
+  text-align: center;
+}

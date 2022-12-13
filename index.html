@@ -1,0 +1,106 @@
+<!DOCtype html>
+<html lang = en>
+
+<!--
+    Author:     Sean Spring
+    Date:       12/13/2022
+    Purpose:    Create an online profile/resume
+-->
+    
+    <head>
+        <title>Spring Style</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type = "text/javascript">
+            var opacity = 0;
+            var intervalID = 0;
+            window.onload = fadeIn;
+            
+            function fadeIn()
+            {
+                setInterval(show, 500);
+            }
+
+            function show()
+            {
+                var body = document.getElementById("body");
+                opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
+                if (opacity < 1)
+                {
+                    opacity = opacity + 0.1;
+                    body.style.opacity = opacity
+                }
+                else
+                {
+                    clearInterval(intervalID);
+                }
+            }
+        </script>
+    </head>
+
+    <body id = "body" style = "opacity: 0;">
+        <nav>
+            <ul id = navbar>
+			    <li><a class = "active" href="index.html">Home</a></li>
+                <li><a href="web.html">Web Development</a></li>
+                <li><a href="programming.html">C Sharp Coding</a></li>
+                <li><a href="experience.html">Work Experience</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class = "content">
+        <h3>My name is Sean Spring; Welcome to Spring Style developing</h3>
+        <br>
+        <p>As a soon to be graduate and recipient of the Ozark Technical Community College's Computer Information Science certificate, I have been educated on the latest platforms and program languages in use today. I've also been able to apply my studies towards several academic projects, which are detailed out in the different sections below. As a budding developer, I am eager to join the world of coding, and bring all that I've learned to the table to advance you and your company's goals.</p>
+        <img src="headshot.jpg" alt="headshot" height="400px">
+        <p>Please choose from the following navigational options:</p>
+        <div class = "container">
+            <a href = "web.html">
+            <div class = "webcontainer" style="--n:70"><strong><u>Web Development</u></strong>
+                <ul class>
+                    <li>Visual Studio Code</li>
+                    <li>&lt;HTML&gt;</li>
+                    <li>CSS {}</li>
+                    <li>Javascript();</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            </a>
+            <a href = "programming.html">
+            <div class = "programmingcontainer" style="--n:70"><strong><u>C# programming</u></strong>
+                <ul>
+                    <li>Visual Studio</li>
+                    <li>static void Main(string[]args)</li>
+                    <li>{Console.WriteLine("Hello World!");}</li>
+                    <br>
+                    <li>Azure DevOps</li>
+                </ul>
+            </div>
+            </a>
+            <a href = "experience.html">
+            <div class = "experiencecontainer" style="--n:70"><strong><u>Work Experience/School Experience</u></strong>
+                <ul>
+                    <li>Kroger</li>
+                    <br>
+                    <li>Bass Pro Shops</li>
+                    <br>
+                    <li>OTC</li>
+                </ul>
+            </div>
+            </a>
+            <a href = "contact.html">
+            <div class = "contactcontainer" style="--n:70"><strong><u>Contact Me</u></strong>
+                <ul>
+                    <li>Email</li>
+                    <br>
+                    <li>LinkedIn</li>
+                    <br>
+                    <li>Phone</li>
+                </ul>
+            </div>
+            </a>
+        </div>
+        </div>
+        <footer>Developer&#40;&#41; Coder&#123;&#125; Programmer&#91;&#93; Engineer&lt;&gt; Architect&#124;&#124;</footer>
+
+    </body>
+</html>
