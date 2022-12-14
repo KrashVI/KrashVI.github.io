@@ -71,6 +71,7 @@ body {
 
 h3 {
   text-align: center;
+  font-family: 'Zen Dots', cursive;
 }
 
 p {
@@ -79,6 +80,7 @@ p {
   color:black;
   width:33%;
   margin-left: 33%;
+  font-family: 'Secular One', sans-serif;
 }
 
 .content {
